@@ -1,10 +1,18 @@
-# BBcode_ucase
-With this BBcode the actual transformation of the selected text is achieved Lowercase to Uppercase.
+# BBcode ucase
+With this BBcode for phpBB the actual transformation of the selected text is achieved Lowercase to Uppercase.
 
+### BBCode usage:
 ```
-[user-profile /]
-[image width=600]
-[link href="http://google.pl" color=red]
-[quote="Thunderer"]This is a quote.[/quote]
-[text color="red"]This is a text.[/text]
+[ucase]{TEXT}[/ucase]
+```
+
+### HTML replacement:
+```
+<span id="ucase1000">{TEXT}</span>
+<script>
+    var res = document.getElementById("ucase1000").innerHTML.toString().toUpperCase();
+    var uniqid = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(2, 10);
+    document.getElementById("ucase1000").setAttribute("id", uniqid);
+    document.getElementById(uniqid).innerHTML = res;
+</script>
 ```
