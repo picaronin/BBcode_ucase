@@ -1,3 +1,4 @@
+[![phpBB](https://www.phpbb.com/theme/images/logos/blue/160x52.png)](http://www.phpbb.com)
 # BBcode ucase
 With this BBcode for phpBB the actual transformation of the selected text is achieved since Lowercase to Uppercase.
 
