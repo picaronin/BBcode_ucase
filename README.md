@@ -16,3 +16,8 @@ With this BBcode for phpBB the actual transformation of the selected text is ach
     document.getElementById(uniqid).innerHTML = res;
 </script>
 ```
+
+### Help line:
+```
+[ucase]TEXT[/ucase] Lowercase to Uppercase
+```
